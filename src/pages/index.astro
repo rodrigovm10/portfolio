@@ -1,10 +1,19 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Hero from '../components/hero.astro';
 import Layout from '../layouts/Layout.astro';
-import "../styles/globals.css";
+import About from '../components/about.astro';
+import Header from '../components/header.astro';
+import AsideLinks from '../components/aside-links.astro';
+import MainContainer from '../components/main-container.astro';
 
+import "../styles/globals.css";
 ---
 
 <Layout>
-	<Welcome />
+  <Header />
+  <AsideLinks/>
+  <MainContainer>
+    <Hero />
+    <About />
+  </MainContainer>
 </Layout>
