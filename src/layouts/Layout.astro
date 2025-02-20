@@ -19,17 +19,18 @@ import '@fontsource-variable/sometype-mono';
 
 <style>
   @reference "tailwindcss";
-	html{
+	* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--dark-slate) var(--oxford) ;
+  }
+  html{
     font-family: 'Rubik Variable', sans-serif, system-ui;
     @apply bg-(--oxford);
     @apply text-(--white);
     @apply scroll-smooth;
   }
-
+ 
   body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-	}
-
+    @apply flex flex-col justify-center min-h-screen w-full m-0 p-0 antialiased overflow-y-auto;
+  }
 </style>

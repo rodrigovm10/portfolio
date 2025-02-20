@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
+@plugin 'tailwind-scrollbar' {
+  nocompatible: true;
+  preferredstrategy: 'pseudoelements';
+}
 
 @theme {
   --font-rubik: 'Rubik Variable', 'sans-serif';
