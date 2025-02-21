@@ -1,17 +1,51 @@
-<section class="flex flex-col justify-center mx-auto max-w-[1000px] min-h-screen">
-  <h1 class="text-[var(--golden)] font-mono font-medium text-base tracking-widest">
-    Hi, my name is
+---
+import Email from './icons/email.astro';
+import Linkedin from './icons/linkedin.astro';
+import ExternalLink from './external-link.astro';
+import Instagram from '../components/icons/instagram.astro';
+import Github from '../components/icons/github.astro';
+---
+
+<section class="flex flex-col justify-center mx-auto max-w-[1000px] min-h-screen gap-4">
+  <h1 class="text-(--golden) font-mono font-medium text-base tracking-widest ">
+    Hello, my name is
   </h1>
 
-  <h2 class="text-2xl font-bold text-[var(--lightest-slate)]">
+  <h2 class="text-(length:--text-2xl) font-bold text-[var(--lightest-slate)]">
     Rodrigo Vega.
   </h2>
-  
-  <h3 class="text-xl text-[var(--slate)] font-bold">
-    I build things for the web.
+
+  <h3 class="text-(length:--text-xl) text-[var(--slate)] font-bold">
+    I create solutions for the web.
   </h3>
 
-  <p class="text-[var(--light-slate)]">
-    I'm a software engineer specializing in building exceptional digital experiences.
+  <p class="text-(--light-slate) max-w-[540px]">
+    I’m a software engineer focused on crafting innovative digital solutions.
   </p>
+
+  <div class="mt-2">
+    <ul class="flex gap-6">
+      <li class="cursor-pointer">
+        <ExternalLink href=''>
+          <Github size={26} class='text-(--light-slate) hover:text-(--golden) transition-colors duration-300'/>
+        </ExternalLink>
+      </li>
+      <li class="cursor-pointer">
+        <ExternalLink href=''>
+          <Instagram size={26} class='text-(--light-slate) hover:text-(--golden) transition-colors duration-300' />
+        </ExternalLink>
+      </li>
+      <li class="cursor-pointer">
+        <ExternalLink href=''>
+          <Linkedin size={26} class='text-(--light-slate) hover:text-(--golden) transition-colors duration-300' />
+        </ExternalLink>
+      </li>
+      <li class="cursor-pointer">
+        <ExternalLink href=''>
+          <Email size={26} class='text-(--light-slate) hover:text-(--golden) transition-colors duration-300' />
+        </ExternalLink>
+      </li>
+    
+    </ul>
+  </div>
 </section>
